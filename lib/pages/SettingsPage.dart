@@ -46,7 +46,7 @@ class SettingsPageState extends State<SettingsPage> {
             data: markdownContent,
             onTapLink: (text, href, title) => openLink(href),
           ),
-          // TODO cleanup
+          // TODO layout not good yet
           const Divider(height: 32),
           MarkdownBody(
             data: '## Settings'
