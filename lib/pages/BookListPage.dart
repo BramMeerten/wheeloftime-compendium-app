@@ -12,7 +12,7 @@ class BookListPage extends StatefulWidget {
 }
 
 class BookListPageState extends State<BookListPage> {
-  final SettingsService settings = const SettingsService();
+  final SettingsService settings = SettingsService.instance;
 
   @override
   void initState() {

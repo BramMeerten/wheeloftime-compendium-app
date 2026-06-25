@@ -40,7 +40,7 @@ class AppInitializer extends StatefulWidget {
 }
 
 class AppInitializerState extends State<AppInitializer> {
-  final SettingsService _settings = const SettingsService();
+  final SettingsService _settings = SettingsService.instance;
 
   @override
   void initState() {
@@ -73,7 +73,7 @@ class AppInitializerState extends State<AppInitializer> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: CircularProgressIndicator(color: Colors.red), // TODO color
+        child: CircularProgressIndicator(),
       ),
     );
   }
